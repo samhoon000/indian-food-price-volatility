@@ -1,178 +1,159 @@
 # 🌾 Agricultural Price Volatility & Market Efficiency Dashboard
 
-This project presents a **data-driven analysis of agricultural mandi prices in India**, focusing on **price volatility, seasonal risk, market fairness, and regional instability**. The dashboards are designed to convert raw price data into **actionable insights** for farmers, analysts, and policymakers.
+> An end-to-end Data Analytics project that transforms raw agricultural market data into actionable business insights by analyzing **price volatility, seasonal trends, and market efficiency** using **Power BI, Power Query, and DAX**.
 
 ---
 
-## 📊 Project Overview
+## 📌 Business Problem
 
-Agricultural prices in India fluctuate due to seasonality, weather, supply-demand mismatches, and market inefficiencies. This project answers key questions such as:
+Agricultural commodity prices fluctuate due to seasonality, weather conditions, supply-demand imbalances, and regional market inefficiencies. These fluctuations create uncertainty for farmers, reduce income stability, and make it difficult for policymakers to identify high-risk markets.
 
-* Are agricultural prices becoming more unstable over time?
-* Which crops are the most volatile?
-* When do price shocks occur?
-* Which markets consistently overpay or underpay farmers?
-* Which states face the highest price instability?
+This project analyzes mandi price data to answer key business questions:
 
-The analysis is presented through **two interactive Power BI dashboards**:
-
-1. **Dashboard 1: Overview & Key Insights**
-2. **Dashboard 2: Market Risk & Efficiency Analysis**
+- Are agricultural prices becoming more volatile over time?
+- Which commodities experience the highest price instability?
+- When do major seasonal price shocks occur?
+- Which markets consistently pay above or below fair market prices?
+- Which states face the highest market risk?
 
 ---
 
-## 🧩 Data & Metrics Used
+# 🎯 Project Objectives
 
-### Key Metrics
-
-* **Modal Price (₹/Quintal)** – Most frequently traded price
-* **Rolling 7-Day Volatility** – Short-term price instability indicator
-* **Daily Price Change** – Day-to-day price movement
-* **Price Spread** – Difference between max and min prices within a market
-* **Market Average Price** – Typical price level of a market
-* **Price Deviation** – Difference between market price and market average price
-
-These metrics together help measure **instability, risk, and market efficiency**.
+- Analyze agricultural price volatility over time.
+- Identify high-risk commodities and regions.
+- Evaluate market fairness using price deviation analysis.
+- Measure market efficiency through price spread metrics.
+- Build interactive dashboards that support data-driven decision making.
 
 ---
 
-## 📘 Dashboard 1: Overview & Key Insights
+# 📊 Dashboard Overview
 
-### 🎯 Purpose
+## 📘 Dashboard 1 — Executive Overview
 
-High-level, executive-friendly view of **overall price behaviour and risk patterns**.
+A high-level dashboard designed to monitor overall agricultural market performance and price behavior.
 
-### 🔍 Visuals & Insights
+### Key Visuals
 
-#### 1️⃣ Price Volatility Over Time
+- Price Volatility Trend
+- Commodity Volatility Comparison
+- Multi-Year Volatility Heatmap
+- KPI Cards
+  - Average Modal Price
+  - Average Price Volatility
+  - Average Price Spread
+  - Total Daily Price Change
 
-* Line chart showing **Average Rolling 7-Day Volatility by Date**
-* Includes a trend line to identify long-term movement
+### Key Insights
 
-**Insight:**
-
-> Overall agricultural price volatility shows an upward trend with sharp seasonal spikes, indicating increasing market instability.
-
----
-
-#### 2️⃣ Commodity-Level Volatility
-
-* Bar chart comparing **average volatility across commodities**
-
-**Insight:**
-
-> Tomato and onion are the most volatile commodities, while wheat and rice remain relatively stable.
+- Agricultural price volatility shows an increasing trend over time.
+- Tomato and Onion are consistently the most volatile commodities.
+- Perishable crops contribute most to seasonal price spikes.
+- Market-wide volatility has increased between 2023 and 2025.
 
 ---
 
-#### 3️⃣ Price Volatility Risk Heatmap (2023–2025)
+## 📙 Dashboard 2 — Market Risk & Efficiency Analysis
 
-* Heatmap showing **commodity-wise volatility across years**
+Designed to identify pricing inefficiencies and regional market risks.
 
-**Insight:**
+### Key Visuals
 
-> Market-wide volatility has increased from 2023 to 2025, driven mainly by perishable crops.
+- Top 10 Overpaying Markets
+- Bottom 10 Underpaying Markets
+- State-wise Price Volatility
+- Market Fairness Analysis
+- Market Efficiency Comparison
 
----
+### Key Insights
 
-#### 4️⃣ Key KPI Cards
-
-* Average Modal Price
-* Average Price Volatility
-* Average Price Spread
-* Total Daily Price Change
-
-**Purpose:**
-
-> Provides a quick numerical summary of the overall market condition.
+- Some markets consistently provide higher returns to farmers.
+- Underpaying markets represent significant income risk.
+- Price instability is concentrated within a limited number of states.
+- Price spread and deviation highlight inefficient market behavior.
 
 ---
 
-## 📙 Dashboard 2: Market Risk & Efficiency Analysis
+# 📈 Analytical Metrics
 
-### 🎯 Purpose
-
-Identify **where risks are concentrated** and **how fair and efficient markets are**.
-
----
-
-### 🔍 Visuals & Insights
-
-#### 1️⃣ Top 10 Overpaying Markets
-
-* Markets consistently paying **above the market average price**
-
-**Insight:**
-
-> These markets offer better price realization and are more attractive selling destinations for farmers.
+| Metric | Description |
+|---------|-------------|
+| **Modal Price** | Most frequently traded commodity price |
+| **Rolling 7-Day Volatility** | Measures short-term price instability |
+| **Daily Price Change** | Day-to-day movement in commodity prices |
+| **Price Spread** | Difference between maximum and minimum prices within a market |
+| **Price Deviation** | Difference between market price and overall market average |
 
 ---
 
-#### 2️⃣ Bottom 10 Underpaying Markets
+# 💡 Business Insights
 
-* Markets consistently paying **below the market average price**
-
-**Insight:**
-
-> These markets pose income risk to farmers due to persistent underpayment.
-
----
-
-#### 3️⃣ Top 10 States by Price Volatility
-
-* State-wise comparison of average price instability
-
-**Insight:**
-
-> Price instability is concentrated in select states, indicating higher regional market risk.
+- Perishable commodities drive the majority of agricultural price volatility.
+- Seasonal patterns have a stronger influence on prices than random fluctuations.
+- Market pricing fairness varies significantly across different regions.
+- A small number of markets consistently outperform others in farmer price realization.
+- Regional volatility identifies areas where policy intervention may have the greatest impact.
 
 ---
 
-#### 4️⃣ Market Efficiency Logic (Underlying Analysis)
+# 🛠 Tech Stack
 
-Markets are evaluated using:
-
-* **Price Spread** → Internal market inconsistency
-* **Price Deviation** → Fairness relative to other markets
-
-This helps identify:
-
-* Efficient & fair markets
-* Inefficient markets
-* Underpaying or high-risk markets
+- **Power BI**
+- **Power Query**
+- **DAX**
+- **Microsoft Excel**
 
 ---
 
-## 📌 Key Takeaways
+# 🎯 Skills Demonstrated
 
-* **Perishable crops** (Tomato, Onion) drive most price instability
-* **Price shocks are seasonal**, not random
-* **Market fairness varies significantly** across regions
-* **A small number of markets and states account for most risk**
-
----
-
-## 🧠 Use Cases
-
-* **Farmers:** Decide *where and when* to sell
-* **Policymakers:** Identify regions needing intervention
-* **Analysts:** Study volatility, risk, and efficiency patterns
-* **Students:** Example of real-world data analysis using Power BI
+- Data Cleaning & Transformation
+- Data Modeling
+- DAX Measure Development
+- Time-Series Analysis
+- Business Intelligence
+- Dashboard Design
+- KPI Development
+- Data Storytelling
 
 ---
 
-## 🛠 Tools Used
+# 🌍 Real-World Applications
 
-* **Power BI** – Data modeling & visualization
-* **Power Query** – Data cleaning & feature engineering
-* **DAX** – Rolling volatility, deviation & aggregation logic
+### 👨‍🌾 Farmers
+
+- Identify better markets for selling produce.
+- Understand seasonal pricing trends.
+
+### 🏛 Policymakers
+
+- Detect regions requiring market intervention.
+- Monitor agricultural market stability.
+
+### 📈 Analysts
+
+- Evaluate price volatility and market efficiency.
+- Monitor regional pricing behavior.
+
+### 🎓 Students
+
+- Learn practical Power BI dashboard development.
+- Explore real-world agricultural analytics.
 
 ---
 
-## ✅ Conclusion
+# 🚀 Project Outcome
 
-This project demonstrates how agricultural price data can be transformed into **clear, actionable insights** using data analysis and visualization. By focusing on volatility, seasonality, and market efficiency, the dashboards provide a **practical decision-support tool** rather than just descriptive charts.
+This project demonstrates how raw agricultural market data can be transformed into meaningful business intelligence through interactive dashboards and analytical modeling. By combining volatility analysis, market efficiency metrics, and data visualization, the solution helps stakeholders understand pricing behavior, identify market risks, and support informed decision making.
 
 ---
 
-📌 *Designed for clarity, interpretability, and real-world relevance.*
+## ⭐ Highlights
+
+- End-to-End Data Analytics Project
+- Interactive Executive Dashboard
+- Business-Oriented KPI Design
+- Time-Series & Volatility Analysis
+- Market Efficiency Evaluation
+- Real-World Decision Support System
